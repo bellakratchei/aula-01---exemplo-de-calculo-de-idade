@@ -1,0 +1,27 @@
+# aula-01---exemplo-de-calculo-de-idade
+
+package aula01;
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Digite seu nome");
+		Scanner scan = new Scanner(System.in);
+		String nome = "";
+		nome = scan.next();
+		System.out.println("O ano de nascimento");
+		Scanner ano = new Scanner(System.in);
+		int idade;
+		Calendar hoje = Calendar.getInstance();
+				
+		idade = hoje.get(Calendar.YEAR) - ano.nextInt();
+		
+		System.out.println("Bem Vindo" + " " + nome + " sua idade e" + " " + idade);
+		
+		// calcular idade (exemplo de aula)
+	}
+}
